@@ -1,139 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAHA MEDIC</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAHA MEDIC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
 </head>
 <body>
 
 <!-- --------- Header Section --------- -->
 <div id="header">
-    <div class="container">
-        <nav>
-            <img src="" class="logo">
-            <ul id="header-menu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#services">Our Doctors</a></li>
-                <li><a href="#portfolio">Booking</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p style="color: #ff004f;">LAHA MEDIC</p>
-
-            <h1>YOUR HEALTH IS <span>OUR PRIORITY</span><br>BLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAHBLAH BLAH</h1>
-            <a href="#portfolio" class="btn btn2">Book Appointment</a>
-        </div>
+  <div class="container">
+    <nav>
+      <img src="images/lahalogo.png" class="logo" alt="LAHA MEDIC Logo" />
+      <ul id="header-menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#services">Our Doctors</a></li>
+        <li><a href="#portfolio">Booking</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div id="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <div class="header-text">
+      <p style="color: #ff004f">LAHA MEDIC</p>
+      <h1>
+        YOUR HEALTH IS <span>OUR PRIORITY</span><br />BLAH BLAHBLAH BLAHBLAH
+        BLAHBLAH BLAHBLAH BLAHBLAH BLAH
+      </h1>
+      <a href="#portfolio" class="btn">Book Appointment</a>
     </div>
-</div>  
-
-<!-- Other sections like Our Doctors, Booking, and Contact Us will go here -->
-
-</body>
-</html>
+  </div>
+</div>
 
 <!-- --------- Our Doctors Section --------- -->
 <div id="services">
-    <div class="container">
-        <h1 class="sub-title">Our Doctors</h1>
-        <div class="services-list">
-            <div>
-                <h2>Dr. John Doe</h2>
-                <h3>Cardiologist</h3>
-                <img src="images/cardiologist.jpg" alt="Cardiologist">
-                <p>Expert in heart health and conditions.</p>
-            </div>
-            <div>
-                <h2>Dr. Jane Smith</h2>
-                <h3>Neurologist</h3>
-                <img src="images/neurologist.jpg" alt="Neurologist">
-                <p>Specialist in brain and nervous system.</p>
-            </div>
-            <div>
-                <h2>Dr. Michael Johnson</h2>
-                <h3>Orthopedist</h3>
-                <img src="images/orthopedist.jpg" alt="Orthopedist">
-                <p>Expert in bone and joint health.</p>
-            </div>
-            <div>
-                <h2>Dr. Emily Davis</h2>
-                <h3>Pediatrician</h3>
-                <img src="images/pediatrician.jpg" alt="Pediatrician">
-                <p>Specializes in children's health.</p>
-            </div>
-        </div>
+  <div class="container">
+    <h1 class="sub-title">Our Doctors</h1>
+    <div class="services-list">
+      <div>
+        <h2>Dr. John Doe</h2>
+        <h3>Cardiologist</h3>
+        <img src="images/cardiologist.jpg" alt="Cardiologist" />
+        <p>Expert in heart health and conditions.</p>
+      </div>
+      <div>
+        <h2>Dr. Jane Smith</h2>
+        <h3>Neurologist</h3>
+        <img src="images/neurologist.jpg" alt="Neurologist" />
+        <p>Specialist in brain and nervous system.</p>
+      </div>
+      <div>
+        <h2>Dr. Michael Johnson</h2>
+        <h3>Orthopedist</h3>
+        <img src="images/orthopedist.jpg" alt="Orthopedist" />
+        <p>Expert in bone and joint health.</p>
+      </div>
+      <div>
+        <h2>Dr. Emily Davis</h2>
+        <h3>Pediatrician</h3>
+        <img src="images/pediatrician.jpg" alt="Pediatrician" />
+        <p>Specializes in children's health.</p>
+      </div>
     </div>
+  </div>
 </div>
 
 <!-- --------- Booking Section --------- -->
 <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Book an Appointment</h1>
-        <form class="booking-form" action="/submit-booking" method="post">
-            <div class="form-group">
-                <label for="patient-name">Name of Patient</label>
-                <input type="text" id="patient-name" name="patient_name" placeholder="Enter full name" required>
-            </div>
-            <div class="form-group">
-                <label for="preferred-date">Preferred Date</label>
-                <input type="date" id="preferred-date" name="preferred_date" required>
-            </div>
-            <div class="form-group">
-                <label for="doctor-specialization">Doctor Specialization</label>
-                <select id="doctor-specialization" name="doctor_specialization" required>
-                    <option value="">-- Select Specialization --</option>
-                    <option value="cardiology">Cardiology</option>
-                    <option value="neurology">Neurology</option>
-                    <option value="orthopedics">Orthopedics</option>
-                    <option value="pediatrics">Pediatrics</option>
-                </select>
-            </div>
-            <div style="text-align: center;">
-                <button type="submit" class="btn">Submit Booking</button>
-            </div>
-        </form>
-    </div>
+  <div class="container">
+    <h1 class="sub-title">Book an Appointment</h1>
+    <form class="booking-form" action="/submit-booking" method="post">
+      <div class="form-group">
+        <label for="patient-name">Name of Patient</label>
+        <input type="text" id="patient-name" name="patient_name" placeholder="Enter full name" required />
+      </div>
+      <div class="form-group">
+        <label for="preferred-date">Preferred Date</label>
+        <input type="date" id="preferred-date" name="preferred_date" min="2025-05-08" required />
+      </div>
+      <div class="form-group">
+        <label for="doctor-specialization">Doctor Specialization</label>
+        <select id="doctor-specialization" name="doctor_specialization" required>
+          <option value="">-- Select Specialization --</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="neurology">Neurology</option>
+          <option value="orthopedics">Orthopedics</option>
+          <option value="pediatrics">Pediatrics</option>
+        </select>
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" class="btn">Submit Booking</button>
+      </div>
+    </form>
+  </div>
 </div>
 
 <!-- --------- Contact Section --------- -->
 <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Us</h1>
-                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Us</h1>
+      <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+      <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
+  </div>
 </div>
 
-<!-- Copyright Section -->
+<!-- --------- Copyright --------- -->
 <div class="copyright">
-    <p>&copy; 2025 LAHA MEDIC. All rights reserved.</p>
+  <p>&copy; 2025 LAHA MEDIC. All rights reserved.</p>
 </div>
 
-
-<!-- Scripts -->
+<!-- --------- JavaScript --------- -->
 <script>
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
+  function toggleMenu() {
+    const menu = document.getElementById("header-menu");
+    menu.classList.toggle("open");
+  }
 </script>
 
 </body>
