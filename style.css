@@ -1,0 +1,292 @@
+/* ----- General Reset and Base Styles ----- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #030303;
+    color: #fff;
+}
+
+/* ----- Header Section ----- */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/lahalogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 140px;
+}
+
+#header-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+#header-menu li {
+    margin-left: 20px;
+}
+
+#header-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#header-menu li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#header-menu li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/* ----- Button Styles ----- */
+.btn {
+    background-color: #ff004f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e60046;
+}
+
+/* ----- Centering "Book Appointment" Button ----- */
+.header-text {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    flex-direction: column;   /* Stack items vertically */
+    align-items: center;      /* Center vertically */
+    height: 100%;  /* Full height of the container */
+}
+
+.header-text a {
+    margin-top: 20px; /* Space between the text and button */
+}
+
+
+
+/* ----- Services Section (Our Doctors) ----- */
+#services {
+    padding: 80px 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ff004f;
+}
+.services-list div p {
+    font-size: 14px;
+    color: #ccc;
+}
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* ----- Booking Form Section ----- */
+#portfolio {
+    padding: 80px 0;
+}
+.booking-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #262626;
+    border-radius: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+}
+.btn {
+    background-color: #ff004f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background-color: #e60046;
+}
+
+/* ----- Contact Section ----- */
+#contact {
+    padding: 80px 0;
+}
+
+.contact-left {
+    margin-bottom: 30px;
+    background-color: #262626; /* Background color for the box */
+    padding: 40px; /* Add padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    max-width: 500px; /* Limit the width */
+    margin: 0 auto; /* Center the box */
+    text-align: center; /* Center the content */
+}
+
+.contact-left h1.sub-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    transition: transform 0.5s, color 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+/* Ensure contact section content stays centered and responsive */
+@media only screen and (max-width: 600px) {
+    .contact-left {
+        padding: 20px;
+        max-width: 90%; /* Allow it to take up most of the screen width on mobile */
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 25px;
+    }
+}
+
+
+/* ----- Copyright Section ----- */
+.copyright {
+    background: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.copyright a {
+    color: #ff004f;
+    text-decoration: none;
+}
+
+.copyright p {
+    margin: 0;
+}
+
